@@ -26,6 +26,9 @@ export class AppComponent implements OnInit {
   title = 'syncfusion-sandbox';
 
   public hostUrl = 'http://localhost:62869/';
+  // public hostUrl = 'https://ej2services.syncfusion.com/production/web-services/';
+
+
   // filemanager
   @ViewChild('filemanagerDefault', { static: false }) filemanagerDefault: FileManager;
   public view: string;
@@ -42,8 +45,7 @@ export class AppComponent implements OnInit {
   // document editor
   // @ViewChild('documentEditorDefault', { read: ElementRef, static: true }) public documentEditorDefault: DocumentEditorComponent;
   // tslint:disable-next-line:variable-name
-  @ViewChild('documentEditorDefault', { static: true }) documentEditorDefault: ElementRef<DocumentEditorContainerComponent>;
-  public container: DocumentEditorContainerComponent;
+  @ViewChild('documentEditorDefault', { static: true }) container: DocumentEditorContainerComponent;
   public documentServiceLink: string;
   public showDocument = false;
 
